@@ -1,8 +1,23 @@
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items')
-  
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-document.querySelector('.Navbar__Link-toggle')
-  .addEventListener('click', classToggle);
+hamburger.addEventListener("click", function toggle() {
+  if (navMenu.style.display === "flex") {
+    navMenu.style.display = "none";
+    return;
+  } else {
+    navMenu.style.display = "flex";
+  }
+});
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth > 1500) {
+    navMenu.style.display = "flex";
+    hamburger.style.display = "none";
+  }
+
+  if (window.innerWidth < 1500) {
+    navMenu.style.display = "none";
+    hamburger.style.display = "block";
+  }
+})

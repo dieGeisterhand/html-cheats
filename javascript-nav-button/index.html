@@ -5,35 +5,35 @@
       JS Nav Button
     </title>
     <link rel="stylesheet" href="style.css">
+     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    <div class="Navbar">
-      <div class="Navbar__Link Navbar__Link-brand">
-         Website title
-       </div>
-       <div class="Navbar__Link Navbar__Link-toggle">
-         <i class="fas fa-bars"></i>
-       </div>
-     <nav class="Navbar__Items">
-       <div class="Navbar__Link">
-         Longer Link
-       </div>
-       <div class="Navbar__Link">
-         Longer Link
-       </div>
-       <div class="Navbar__Link">
-         Link
-       </div>
-     </nav>
-     <nav class="Navbar__Items Navbar__Items--right">
-       <div class="Navbar__Link">
-         Link
-       </div>
-       <div class="Navbar__Link">
-         Link
-       </div>
-     </nav>
-    </div>
+    <div class="top-banner">
+      <div class="nav-bar">
+        <div class="nav-bar-container">
+          <div class="nav-bar-left-container" id="nav-menu">
+            <div class="nav-bar-option" id="about-button">
+              <a href="#">
+                About Us
+              </a>
+            </div>
+            <div class="nav-bar-option" id="contribute-button">
+              <a href="#">
+                Contribute
+              </a>
+            </div>
+          </div>
+          <div class="hamburger" id="hamburger" onclick="toggle()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-bar-title">
+            Goats.
+          </div>
+        </div>
     <script src="main.js"></script>
   </body>
 </html>
