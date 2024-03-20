@@ -1,14 +1,17 @@
+body {
+  height: 100dvh;
+}
+
 header {
   display: flex;
   width: 100%;
   height: 5.3rem;
-  background-color: rgb(255, 255, 255);
   position: fixed;
+  background-color: white;
 }
 
 .nav-bar {
   display: flex;
-
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -35,21 +38,36 @@ ul li {
   display: inline;
 }
 
-
 .follow-logo {
   width: 25px;
   vertical-align: middle;
   margin: 10px;
 }
 
-.landing-page {
+main {
   width: 100%;
-  height: 75%;
-  overflow: hidden;
+  height: 100%;
+  padding-top: 5.3rem;
 }
 
-.landing-page > img {
+.landing-page {
+  display: flex;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 92%;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-size: cover;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: #9DC20A;
+  border: 1px solid #979797;
+  border-radius: 0.3rem;
+  margin: 10rem;
+  padding: 2rem;
 }
