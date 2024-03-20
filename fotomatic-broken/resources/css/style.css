@@ -47,14 +47,13 @@ ul li {
 
 main {
   width: 100%;
-  height: 100%;
   padding-top: 5.3rem;
 }
 
 .landing-page {
   display: flex;
   width: 100%;
-  height: 92%;
+  height: 100dvh;
   background-image: url("../images/banner-landingpage.jpg");
   background-size: cover;
   align-items: center;
@@ -194,7 +193,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 25%;
+  height: 40dvh;
   font-family: "Parisienne", cursive;
   background-color: #EAEAEA;
   color: rgb(0, 0, 0);
@@ -221,5 +220,5 @@ footer {
 }
 
 footer > p {
-  padding: 2rem;
+  padding: 0 2rem;
 }
