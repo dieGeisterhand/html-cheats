@@ -62,12 +62,72 @@ main {
 .content {
   display: flex;
   flex-direction: column;
+  line-height: 1.6;
   align-items: center;
-  height: 500px;
-  width: 400px;
+  justify-content: center;
+  text-align: center;
+  min-height: 13rem;
+  width: 30rem;
   background-color: #9DC20A;
   border: 1px solid #979797;
   border-radius: 0.3rem;
   margin: 10rem;
   padding: 2rem;
+  color: white;
+}
+
+.content > h2 {
+  font-family: "Damion", cursive;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.content > h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+}
+
+.content > p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.content > span {
+  font-weight: bold;
+}
+
+.content > button { 
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  border: none;
+  width: 80%;
+  height: 4rem;
+  background-color: #4A4A4A;
+  color: white; 
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+
+.specs {
+  display: flex;
+  justify-content: center;
+  background-color: #EAE8E8;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.left-box, .right-box {
+  display: flex;
+  justify-content: center;
+  height: 39rem;
+  width: 39rem;
+  padding: 2rem;
+  background-color: white;
+}
+
+.left-box > img,
+.right-box > img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  overflow: hidden;
 }
