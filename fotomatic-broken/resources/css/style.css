@@ -211,6 +211,7 @@ main {
 
 footer {
   display: flex;
+  font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
   background-color: #AEAEAE;
