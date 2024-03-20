@@ -1,5 +1,6 @@
 body {
   height: 100dvh;
+  font-family: "Roboto Mono", monospace;
 }
 
 header {
@@ -88,7 +89,8 @@ main {
 }
 
 .content > p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
+  max-width: 24rem;
 }
 
 .content > span {
@@ -96,7 +98,6 @@ main {
 }
 
 .content > button { 
-  font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: none;
   width: 80%;
@@ -117,9 +118,10 @@ main {
 
 .left-box, .right-box {
   display: flex;
-  justify-content: center;
-  height: 39rem;
-  width: 39rem;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width: 42rem;
   padding: 2rem;
   background-color: white;
 }
@@ -130,4 +132,25 @@ main {
   height: 65%;
   object-fit: cover;
   overflow: hidden;
+  margin-bottom: 7%;
+}
+
+.spec-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.spec-text > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+.spec-text > p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #4A4A4A;
 }
