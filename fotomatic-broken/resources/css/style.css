@@ -16,7 +16,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem;
+  padding: 1rem;
   line-height: 1.6;
 }
 
@@ -45,6 +45,16 @@ ul li {
   margin: 10px;
 }
 
+.join {
+  display: none;
+  height: 2.5rem;
+  width: 5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  background-color: #9DC20A;
+  border: none;
+}
 main {
   width: 100%;
   padding-top: 5.3rem;
@@ -113,13 +123,14 @@ main {
   background-color: #EAE8E8;
   padding: 3rem;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .left-box, .right-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30rem;
+  height: 40rem;
   width: 42rem;
   padding: 2rem;
   background-color: white;
@@ -128,7 +139,7 @@ main {
 .left-box > img,
 .right-box > img {
   width: 100%;
-  height: 65%;
+  height: 75%;
   object-fit: cover;
   overflow: hidden;
   margin-bottom: 7%;
@@ -158,6 +169,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
   height: auto;
   background-color: #4A4A4A;
@@ -174,17 +186,20 @@ main {
 
 .filter-gallery > p {
   font-weight: 200;
+  font-size: 1rem;
 }
 
 .filter-examples { 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 4rem;
+
 }
 
 .filter-examples > img {
-  width: 21rem;
+  max-width: 23rem;
   height: auto;
 }
 
@@ -193,7 +208,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40dvh;
+  height: 30dvh;
   font-family: "Parisienne", cursive;
   background-color: #EAEAEA;
   color: rgb(0, 0, 0);
@@ -222,4 +237,106 @@ footer {
 
 footer > p {
   padding: 0 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .join {
+    display: inline;
+  }
+
+  .nav-bar {
+    font-size: 1.3rem;
+  }
+
+  .landing-page {
+    height: 50dvh;
+  }
+
+  .content {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+  }
+
+  .content > p,
+  .content > button {
+    display: none;
+  }
+
+  .content > h2 {
+    font-size: 4rem;
+  }
+
+  .content > h1 {
+    font-size: 4rem;
+  }
+
+  .specs {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .left-box > img,
+  .right-box > img {
+    margin-bottom: 5%;
+  }
+
+  .left-box,
+  .right-box {
+    height: 50rem;
+    width: 93.5%;
+  }
+
+  .left-box {
+    background-color: #AEAEAE;
+  }
+
+  .spec-text > h2 {
+    font-size: 3rem;
+  }
+
+  .spec-text > p {
+    font-size: 1.5rem;
+  }
+
+  .filter-examples {
+    margin-bottom: 0;
+  }
+  
+  .filter-examples > img {
+    max-width: 15rem;
+  }
+
+  .filter-gallery > h2 {
+    font-size: 3rem;
+  }
+
+  .filter-gallery > p {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    height: 15rem;
+  }
+
+  .quote > h2 {
+    font-size: 2rem;
+    margin: 2rem;
+    width: 90%;
+  }
+
+  .quote > img {
+    padding-right: 2rem;
+  }
+
+  footer {
+    height: 5rem;
+  }
+
+  footer > p {
+    font-size: 1.2rem;
+  }
 }
